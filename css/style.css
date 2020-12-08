@@ -460,7 +460,7 @@ img {
     display: block;
 }
 /* Позиционирования страницы ПОРТФОЛИО */
-/* Шапка */
+/* Кнопки основного контента */
 
 .main-container {
     background: var(--white-bg-color);
@@ -474,6 +474,17 @@ img {
     padding-left: 0;
        
 }
+.portfolio {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 34px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+}
+/* Основной контент страницы "Портфолио" */
 .section.portfolio-container {
     width: 1200px;
     background-color: var(--white-bg-color);
@@ -484,16 +495,6 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 
-}
-.portfolio {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 34px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    
 }
 .portfolio .list-navigation:not(:last-child) {
     margin-right: 8px;
@@ -535,6 +536,10 @@ padding: 20px 24px;
 .lists-section.lists-cards:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
+.lists-section {
+    width: 370px;
+    border: 1px solid #EEEEEE;
+}
 /* Работа с фоном и псевдоелементами */
 .hero-overlay {
     max-width: 1600px;
@@ -564,7 +569,7 @@ padding: 20px 24px;
     
 }
 .envelope:hover ,
-.envelope:hover {
+.envelope:focus {
     fill: var(--accent-color);
 }
 .phone {
@@ -647,7 +652,7 @@ background-image: url("../images/icons/clock-1.svg");
 .clients-list {
     display: flex;
     padding-left: 0;
-    margin-top: 0;
+    margin-top: 0;  
     margin-bottom: 0;
 }
 .icon-logo-1,.icon-logo-2,
@@ -682,7 +687,8 @@ background-image: url("../images/icons/clock-1.svg");
     color: var(--accent-color);
     
 }
-.clients-list .item:hover {
+.clients-list .item:hover ,
+.clients-list .item:focus {
     border: 1px solid var(--accent-color);
     border-radius: 4px;
 }
@@ -718,7 +724,8 @@ background-image: url("../images/icons/clock-1.svg");
     background-position: center;
     border-radius: 50%;
 }
-.footer-list .icon:hover::before {
+.footer-list .icon:hover::before ,
+.footer-list .icon:focus::before {
     background-color: var(--accent-color);
 }
 .footer-list {
@@ -748,12 +755,9 @@ background-image: url("../images/icons/clock-1.svg");
 }
 /* Псевдоелементы главной секции страницы "Портфолио */
 .lists-section:hover {
-   border: 1px solid #EEEEEE;
+   
    box-shadow: 
     0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16); 
-}
-.lists-section {
-    width: 370px;
 }
