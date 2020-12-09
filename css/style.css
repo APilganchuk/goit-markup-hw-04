@@ -195,8 +195,8 @@ img {
 .list-btn:focus {
     color: var(--white-color);
     background: var(--accent-color);
-   
-}                           
+
+}                          
 .section .list-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -250,9 +250,12 @@ img {
 }
 .container .link {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 26px;
 }
-
+.nav .link:hover{
+    border-bottom: 4px solid var(--accent-color);
+    border-radius: 2px;
+}
 .nav {
     display: flex;
     margin: 0;
